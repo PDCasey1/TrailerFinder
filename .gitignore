@@ -1,3 +1,7 @@
 
 .vscode/launch.json
 *.ipynb
+todo.txt
+data_updater.py
+tester.py
+club_cleaner_upper.pycreated

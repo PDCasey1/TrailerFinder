@@ -1,13 +1,17 @@
+
+
+
+
+
 import csv
 import ast
-
 
 def create_club_set():
     # returns a set of all clubs found in all races.
 
     clubs = set([])
 
-    with open('masterdataset.csv', newline='') as f:
+    with open('MASTER_DATA.csv', newline='') as f:
         reader = csv.DictReader(f)
         
         for count, row in enumerate(reader):
@@ -23,7 +27,7 @@ def clubs_by_attendance(clubs):
 
     club_attendance = {}
 
-    with open('masterdataset.csv', newline='') as f:
+    with open('MASTER_DATA.csv', newline='') as f:
         reader = csv.DictReader(f)
         
         for clubcount, club in enumerate(clubs):
@@ -47,5 +51,3 @@ def clubs_by_attendance(clubs):
                 print(f'{clubcount+1} of {len(clubs)} clubs processed')
 
     print(club_attendance)
-
-clubs_by_attendance(create_club_set())
