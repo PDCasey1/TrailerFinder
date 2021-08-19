@@ -1,5 +1,4 @@
 # ------------------------------------------------------------------------------
-
 # Webscraper that builds 'MASTER_DATA.csv'. Scrapes regattacentral.com for 
 # relevant event information. Currently not automated, but I'd like to add 
 # functionaity that checks all pages periodically whose 'event_date' has not 
@@ -7,7 +6,6 @@
 
 # This does not update MASTER_DATA.csv, only generates it initially. The 
 # updater, when created, will ignore old races and focus only on upcoming ones.
-
 # ------------------------------------------------------------------------------
 
 
